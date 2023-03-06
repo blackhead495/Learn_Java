@@ -16,5 +16,6 @@ public class H1_TriangleNumber {
 
         System.out.println("Треугольное число: " + sum);
         System.out.println(num + "! = " + mul);
+        scan.close();
     }
 }
