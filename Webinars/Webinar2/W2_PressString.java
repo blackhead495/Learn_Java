@@ -1,4 +1,5 @@
-
+// Написать метод, который сжимает строку
+// Пример: aaaabbbcdd -> a4b3c1d2
 
 package Webinars.Webinar2;
 

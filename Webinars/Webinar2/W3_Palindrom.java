@@ -1,3 +1,6 @@
+// Написать метод, который принимает на вход строку (String)
+// и определяет, является ли строка палиндромом (возвращает значение boolean)
+
 package Webinars.Webinar2;
 
 import java.util.Scanner;
