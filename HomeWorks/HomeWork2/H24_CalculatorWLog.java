@@ -1,3 +1,5 @@
+// К калькулятору из предыдущего дз добавить логирование.
+
 package HomeWorks.HomeWork2;
 
 import java.io.IOException;
