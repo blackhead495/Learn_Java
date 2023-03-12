@@ -2,7 +2,7 @@
 
 package HomeWorks.HomeWork1;
 import java.util.Scanner;
-public class H1_TriangleNumber {
+public class H11_TriangleNumber {
     public static void main(String[] args) {
         System.out.print("Введите число: ");
         Scanner scan = new Scanner(System.in);

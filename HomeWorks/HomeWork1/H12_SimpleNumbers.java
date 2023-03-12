@@ -2,7 +2,7 @@
 
 package HomeWorks.HomeWork1;
 
-public class H2_SimpleNumbers {
+public class H12_SimpleNumbers {
     public static void main(String[] args) {
         System.out.print("Простые числа: ");
         for (int i = 1; i <= 1000; i++) {

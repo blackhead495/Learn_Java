@@ -1,6 +1,6 @@
 package HomeWorks.HomeWork1;
 import java.util.Scanner;
-public class H3_Calculator {
+public class H13_Calculator {
     public static void main(String[] args) {
         double num1;
         double num2;
