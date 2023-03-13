@@ -1,3 +1,5 @@
+// Пусть дан произвольный список целых чисел, удалить из него чётные числа
+
 package HomeWorks.HomeWork3;
 
 import java.util.ArrayList;

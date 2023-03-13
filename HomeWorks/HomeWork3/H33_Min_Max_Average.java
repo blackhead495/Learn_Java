@@ -1,3 +1,5 @@
+// Задан целочисленный список ArrayList. Найти минимальное, максимальное и среднее из этого списка.
+
 package HomeWorks.HomeWork3;
 
 import java.util.ArrayList;
