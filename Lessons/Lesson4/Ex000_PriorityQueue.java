@@ -1,7 +1,7 @@
 package Lessons.Lesson4;
 import java.util.PriorityQueue;
 
-public class Ex000 {
+public class Ex000_PriorityQueue {
     public static void main(String[] args) {
         PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
         pq.add(123);
