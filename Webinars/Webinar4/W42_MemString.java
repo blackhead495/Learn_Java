@@ -7,13 +7,13 @@ package Webinars.Webinar4;
 
 import java.util.*;
 
-public class W42_ {
+public class W42_MemString {
     public static void main(String[] args) {
         List<String> linkedList = new LinkedList<>();
         Scanner iScan = new Scanner(System.in);
         String temp = "";
         while (!temp.toLowerCase().equals("quit")) {
-            System.out.println("Введите строку: ");
+            System.out.print("Введите строку: ");
             temp = iScan.nextLine();
             if(temp.toLowerCase().equals("print")) {
                 Collections.reverse(linkedList);
@@ -22,6 +22,7 @@ public class W42_ {
             } else if (temp.toLowerCase().equals("revert")) {
                 if (!linkedList.isEmpty()) {
                     linkedList.remove(linkedList.size()-1);
+                    System.out.println(linkedList);
                 } else {
                     System.out.println("Список пуст. ");
                 }

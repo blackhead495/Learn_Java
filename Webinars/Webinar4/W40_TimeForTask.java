@@ -1,10 +1,14 @@
+// 1. Замерьте время, за которое в ArrayList добавятся 10000 элементов
+// 2. Замерьте время, за которое в LinkedList добавятся 10000 элементов
+//  Сравните их между собой
+
 package Webinars.Webinar4;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class W44_Time {
+public class W40_TimeForTask {
     public static void main(String[] args) {
         List<Integer> arrayList = new ArrayList<>();
         Random random = new Random();
@@ -23,6 +27,6 @@ public class W44_Time {
 
         System.out.println(endTimeArray - startTimeArray);
         System.out.println(endTimeLinked - startTimeLinked);
-
+        System.out.println((endTimeArray - startTimeArray)-(endTimeLinked - startTimeLinked));
     }
 }

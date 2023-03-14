@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class W43_ {
+public class W43_StackArray {
     public static void main(String[] args) {
         Integer[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         ex1(arr);
