@@ -9,25 +9,25 @@ import java.util.*;
 
 public class W42_MemString {
     public static void main(String[] args) {
-        List<String> linkedList = new LinkedList<>();
+        List<String> ls = new LinkedList<>();
         Scanner iScan = new Scanner(System.in);
         String temp = "";
         while (!temp.toLowerCase().equals("quit")) {
             System.out.print("Введите строку: ");
             temp = iScan.nextLine();
             if(temp.toLowerCase().equals("print")) {
-                Collections.reverse(linkedList);
-                System.out.println(linkedList);
-                Collections.reverse(linkedList);
+                Collections.reverse(ls);
+                System.out.println(ls);
+                Collections.reverse(ls);
             } else if (temp.toLowerCase().equals("revert")) {
-                if (!linkedList.isEmpty()) {
-                    linkedList.remove(linkedList.size()-1);
-                    System.out.println(linkedList);
+                if (!ls.isEmpty()) {
+                    ls.remove(ls.size()-1);
+                    System.out.println(ls);
                 } else {
                     System.out.println("Список пуст. ");
                 }
             } else {
-                linkedList.add(temp);
+                ls.add(temp);
             }
         }
     }
