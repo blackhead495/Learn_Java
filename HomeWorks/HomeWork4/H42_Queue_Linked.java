@@ -20,7 +20,7 @@ public class H42_Queue_Linked {
         int a = dequeue(que);                 // Возвращаем первый элемент из очереди и удаляем его
         System.out.print(a + " ");
         System.out.println(que);
-        a = first(que);                         // Возвращаем первый элемент из очереди, не удаляя его
+        a = first(que);                        // Возвращаем первый элемент из очереди, не удаляя его
         System.out.print(a + " ");
         System.out.println(que);
     }
