@@ -4,7 +4,7 @@
  *************************************************************************/
 package HomeWorks.HomeWork5;
 import java.util.*;
-public class H51 {
+public class H51_StructPhoneBook {
     public static void main(String[] args) {
         HashMap <String, List<String>> dict = new HashMap<>();
         Scanner iScan = new Scanner(System.in);
