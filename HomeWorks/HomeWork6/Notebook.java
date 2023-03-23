@@ -72,7 +72,12 @@ public class Notebook {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Notebook notebook = (Notebook) o;
-        return Objects.equals(manufacturer, notebook.manufacturer) && Objects.equals(diagonal, notebook.diagonal) && Objects.equals(cpu, notebook.cpu) && Objects.equals(os, notebook.os) && Objects.equals(ram, notebook.ram) && Objects.equals(ssd, notebook.ssd);
+        return  Objects.equals(manufacturer, notebook.manufacturer) &&
+                Objects.equals(diagonal, notebook.diagonal) &&
+                Objects.equals(cpu, notebook.cpu) &&
+                Objects.equals(os, notebook.os) &&
+                Objects.equals(ram, notebook.ram) &&
+                Objects.equals(ssd, notebook.ssd);
     }
 
     @Override
@@ -83,12 +88,12 @@ public class Notebook {
     @Override
     public String toString() {
         return "Notebook " +
-                "firmName='" + manufacturer + '\'' +
-                ", diagonal=" + diagonal +
-                ", cpu='" + cpu + '\'' +
-                ", os='" + os + '\'' +
-                ", ram=" + ram + "Gb" +
-                ", ssd=" + ssd + "Gb";
+                "Manufactuter = '" + manufacturer + '\'' +
+                ", diagonal = " + diagonal +
+                ", cpu = '" + cpu + '\'' +
+                ", os = '" + os + '\'' +
+                ", ram = " + ram + "GB" +
+                ", ssd = " + ssd + "GB";
     }
 }
 
