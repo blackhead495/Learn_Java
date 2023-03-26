@@ -19,27 +19,33 @@ package HomeWorks.HomeWork6;
 
 import java.util.*;
 
-public class H61_Notebook {
+public class H61_Program {
     public static void main(String[] args) throws Exception {
         List<Notebook> list = new ArrayList<>();
-        Notebook note1 = new Notebook("Lenovo", 19.0f, "i5", "Windows", 8, 128);
-        Notebook note2 = new Notebook("Asus",    15.6f, "i3", "Windows", 16, 128);
-        Notebook note3 = new Notebook("HP",     15.6f, "i7", "Windows", 32, 256);
-        Notebook note4 = new Notebook("MacBook", 13.3f, "i3", "iOS", 16, 512);
-        Notebook note5 = new Notebook("MacBook", 13.3f, "i3", "iOS", 32, 128);
-        Notebook note6 = new Notebook("Acer",   17.0f, "i9", "Windows", 16, 256);
-        Notebook note7 = new Notebook("Samsung", 17.0f, "i7", "Windows", 8, 512);
+        Notebook note1 = new Notebook("lenovo", 19.0f, "i5", "windows", 8, 128);
+        Notebook note2 = new Notebook("asus",    15.6f, "i3", "windows", 16, 128);
+        Notebook note3 = new Notebook("hp",     15.6f, "i7", "windows", 32, 256);
+        Notebook note4 = new Notebook("macbook", 13.3f, "i3", "ios", 16, 512);
+        Notebook note5 = new Notebook("macbook", 13.3f, "i3", "ios", 32, 128);
+        Notebook note6 = new Notebook("acer",   17.0f, "i9", "windows", 16, 256);
+        Notebook note7 = new Notebook("samsung", 15.6f, "i7", "windows", 8, 512);
+        Notebook note8 = new Notebook("hp", 17.0f, "i7", "windows", 8, 512);
+        Notebook note9 = new Notebook("lenovo", 13.3f, "i7", "windows", 8, 512);
+        Notebook note10 = new Notebook("samsung", 15.6f, "i5", "windows", 8, 128);
+        Notebook note11 = new Notebook("acer", 13.3f, "i5", "windows", 8, 512);
+        Notebook note12 = new Notebook("asus", 17.0f, "i7", "linux", 8, 256);
 
-        Collections.addAll(list, note1, note2, note3, note4, note5, note6, note7);
+        Collections.addAll(list, note1, note2, note3, note4, note5, note6, note7, note8, note9, note10, note11, note12);
 
-        System.out.print("По какому критерию отсортировать? :\n" +
-                "1 - Производитель\n" +
-                "2 - Диагональ экрана\n" +
-                "3 - Процессор\n" +
-                "4 - Операционная система\n" +
-                "5 - Оперативная память\n" +
-                "6 - Размер жесткого диска\n" +
-                "Введите через пробел ->> ");
+        System.out.print("""
+                По какому критерию отсортировать? :
+                1 - Производитель
+                2 - Диагональ экрана
+                3 - Процессор
+                4 - Операционная система
+                5 - Оперативная память
+                6 - Размер жесткого диска
+                Введите через пробел ->>\s""");
 
         Scanner iScan = new Scanner(System.in);
         String[] choice = iScan.nextLine().split(" ");
@@ -50,32 +56,38 @@ public class H61_Notebook {
                     case "1" -> {
                         System.out.print("Введите одну из моделей - Lenovo, Asus, HP, MacBook, Acer, Samsung: ");
                         sortManufacture(list, iScan.next().toLowerCase());
-                        System.out.println(list);
+                        list.forEach(System.out::println);
+                        System.out.println();
                     }
                     case "2" -> {
-                        System.out.print("Введите один из размеров диагонали - 13.3, 15.6, 17.0: ");
+                        System.out.print("Введите один из размеров диагонали - 13.3, 15.6, 17.0, 19.0: ");
                         sortDiagonal(list, iScan.next().toLowerCase());
-                        System.out.println(list);
+                        list.forEach(System.out::println);
+                        System.out.println();
                     }
                     case "3" -> {
-                        System.out.print("Введите модель процессора - i3, i5, i7: ");
+                        System.out.print("Введите модель процессора - i3, i5, i7, i9: ");
                         sortCPU(list, iScan.next().toLowerCase());
-                        System.out.println(list);
+                        list.forEach(System.out::println);
+                        System.out.println();
                     }
                     case "4" -> {
                         System.out.print("Введите операционную систему - Linux, Windows, iOS: ");
                         sortOS(list, iScan.next().toLowerCase());
-                        System.out.println(list);
+                        list.forEach(System.out::println);
+                        System.out.println();
                     }
                     case "5" -> {
                         System.out.print("Введите объем ОЗУ (GB) - 4, 8, 16, 32: ");
                         sortRAM(list, iScan.next().toLowerCase());
-                        System.out.println(list);
+                        list.forEach(System.out::println);
+                        System.out.println();
                     }
                     case "6" -> {
                         System.out.print("Введите объем SSD (GB): 128, 256, 512, 1024: ");
                         sortSSD(list, iScan.next().toLowerCase());
-                        System.out.println(list);
+                        list.forEach(System.out::println);
+                        System.out.println();
                     }
                     default -> throw new Exception();
                 }
